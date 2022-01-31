@@ -132,7 +132,7 @@ return answer
 // -------------
 
 function gradesAvg(arr) {
-    let grades=[];
+    
    
 
 arr.map(grade=>{
@@ -145,8 +145,10 @@ value.reduce()
 let newArr =(grade.firstName,grade.lastName,grade.gradsList,avg)
 grades.push(newArr);
 
+let arr1=[1,2,3,4];
 
-return grades;
+const reducer = (previousValue, currentValue) => previousValue + currentValue;
+return arr1.reduce(reducer)
 
 })
 
