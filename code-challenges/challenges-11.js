@@ -137,18 +137,12 @@ function gradesAvg(arr) {
 
 arr.map(grade=>{
 
+    var sum = grade.gradsList.reduce(function(a, b){
+        return a + b;
+    }, 0);
 
-let value=grade.gradsList;
 
-value.reduce()
 
-let newArr =(grade.firstName,grade.lastName,grade.gradsList,avg)
-grades.push(newArr);
-
-let arr1=[1,2,3,4];
-
-const reducer = (previousValue, currentValue) => previousValue + currentValue;
-return arr1.reduce(reducer)
 
 })
 

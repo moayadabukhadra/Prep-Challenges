@@ -79,7 +79,6 @@ const cvsFiltration = (arr) => {
 let fullName=`fullName: ${element.firstName} ${element.LastName}`;
 arr.filter(obj=> obj.yearsOfExperience>4 && obj.tech=="JS");
 
-return fullName
 
 });
 }
@@ -98,9 +97,10 @@ return fullName
 // ------------------------
 
 const vowelsFiltration = (arr) => {
-var PATTERN = /\B[s]\B/;
-return  arr.filter (str =>  PATTERN.test(str));
+    let PATTERN =/[aeiou]/
+return  arr.filter(str=> !PATTERN.test(str))
 
+  
 
  
 } 
