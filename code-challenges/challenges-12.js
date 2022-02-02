@@ -75,12 +75,11 @@ const oddFiltration = (arr) => {
 
 const cvsFiltration = (arr) => {
    
-    arr.forEach(element => {
-let fullName=`fullName: ${element.firstName} ${element.LastName}`;
-arr.filter(obj=> obj.yearsOfExperience>4 && obj.tech=="JS");
+ return arr.filter(obj=> {
+    obj.yearsOfExperience>4 && obj.tech=="JS"
 
 
-});
+})
 }
     
  
