@@ -74,11 +74,11 @@ const oddFiltration = (arr) => {
 // ------------------------
 
 const cvsFiltration = (arr) => {
-   
+   let newArr=[];
  return arr.filter(obj=> {
-    obj.yearsOfExperience>4 && obj.tech=="JS"
+   obj.yearsOfExperience>4 && obj.tech=="JS"
 
-
+return newArr=[ `fullName: ${obj.firstName} ${obj.lastName}`, `tech:${obj.JS}`]
 })
 }
     

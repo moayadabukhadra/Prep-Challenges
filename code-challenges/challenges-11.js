@@ -132,19 +132,26 @@ return answer
 // -------------
 
 function gradesAvg(arr) {
-    
 
- arr.map(outPut=>{
-    
-   let avg= outPut.gradsList.reduce((a, b) => a + b, 0)
-   let gradsAvg={}
-  gradsAvg= avg/outPut.gradsList.length
- 
-return gradsAvg
-
+let newArr=[];
+const avg= arr.map(element=>{
+    let sum = element.gradsList.reduce((a,b)=> a+b,0);
+let avg = sum/element.gradsList.length
+ return avg
 })
+for (let i=0;i<arr.length;i++){
+let x = arr[i]+avg[i]
+
+newArr.push(x)
 
 }
+return newArr
+}
+
+
+
+
+
 
 
 
