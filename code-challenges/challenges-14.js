@@ -96,10 +96,14 @@ const arrToStr = (arr) => {
 
 const letterCounter = (str) => {
   let splits =  str.split("");
-  for(let i =0; i<splits.length;i++){
- let x =  splits.indexOf(splits[i]);
+ 
+  for(let i=0;i<splits.length;i++){
+if (splits[i]===splits[i+1]){
 
- return splits.indexOf(splits[x]);
+  `${splits[i]}${i}`
+
+}
+
 
   }
 

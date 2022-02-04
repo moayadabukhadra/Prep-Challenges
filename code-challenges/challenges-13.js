@@ -119,7 +119,10 @@ const stringReverse = (str) => {
 // ------------------------
 
 const statistics = (obj) => {
-   obj.reduce(previosValue.votes_To,)
+ 
+
+
+
 
 
 
