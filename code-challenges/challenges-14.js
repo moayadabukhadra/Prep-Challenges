@@ -79,9 +79,14 @@ if(y>=0){
 // ------------------------
 
 const arrToStr = (arr) => {
-  
-}
+  arr.splice(5, 0,',');
+ let newArr = arr.slice(0,5);
+ let newArr1=arr.slice(5)
 
+  
+  return newArr.join(" ")+newArr1.join(" ");
+
+}
 // 5) ---------------------
 // 
 // Simon got a string manipulation question for his interview, it asked him to replace the duplicated letters in a string to an indicator and counter

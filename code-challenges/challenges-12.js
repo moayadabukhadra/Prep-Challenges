@@ -74,13 +74,23 @@ const oddFiltration = (arr) => {
 // ------------------------
 
 const cvsFiltration = (arr) => {
-   let newArr=[];
- return arr.filter(obj=> {
-   obj.yearsOfExperience>4 && obj.tech=="JS"
+  let newArr=[];
+  let result={}
+  arr.filter(obj=> {
+    if(obj.yearsOfExperience>4 && obj.tech=="JS"){
+   
 
-return newArr=[ `fullName: ${obj.firstName} ${obj.lastName}`, `tech:${obj.JS}`]
-})
-}
+   result={
+     "fullName": obj.firstName+" "+obj.LastName,
+     "tech": obj.tech
+   }
+   newArr.push(result);
+    }
+  })
+  return newArr
+  }
+
+
     
  
 
